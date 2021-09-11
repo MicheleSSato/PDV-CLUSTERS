@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C3122EA7-B14E-4A86-A6BC-3EC4B90C3B95}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PDV_CLUSTERS</RootNamespace>
+    <AssemblyName>PDV CLUSTERS</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Conexao.cs" />
+    <Compile Include="telaCadastroFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telaCadastroFornecedor.Designer.cs">
+      <DependentUpon>telaCadastroFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telaCadastroFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telaCadastroFuncionario.Designer.cs">
+      <DependentUpon>telaCadastroFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telaCadastroProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telaCadastroProduto.Designer.cs">
+      <DependentUpon>telaCadastroProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InicioPDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioPDV.Designer.cs">
+      <DependentUpon>InicioPDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="telaCaixaFechamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telaCaixaFechamento.Designer.cs">
+      <DependentUpon>telaCaixaFechamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telaCaixaSangria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telaCaixaSangria.Designer.cs">
+      <DependentUpon>telaCaixaSangria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telaCaixaVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telaCaixaVenda.Designer.cs">
+      <DependentUpon>telaCaixaVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaManterCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaManterCadastro.Designer.cs">
+      <DependentUpon>TelaManterCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaManterFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaManterFornecedor.Designer.cs">
+      <DependentUpon>TelaManterFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telaManterFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telaManterFuncionario.Designer.cs">
+      <DependentUpon>telaManterFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telaRelatorioFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telaRelatorioFuncionario.Designer.cs">
+      <DependentUpon>telaRelatorioFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telaRelatorioProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telaRelatorioProdutos.Designer.cs">
+      <DependentUpon>telaRelatorioProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telaRelatorioVendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telaRelatorioVendas.Designer.cs">
+      <DependentUpon>telaRelatorioVendas.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="InicioPDV.resx">
+      <DependentUpon>InicioPDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="telaCadastroFornecedor.resx">
+      <DependentUpon>telaCadastroFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telaCadastroFuncionario.resx">
+      <DependentUpon>telaCadastroFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telaCadastroProduto.resx">
+      <DependentUpon>telaCadastroProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telaCaixaFechamento.resx">
+      <DependentUpon>telaCaixaFechamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telaCaixaSangria.resx">
+      <DependentUpon>telaCaixaSangria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telaCaixaVenda.resx">
+      <DependentUpon>telaCaixaVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaManterFornecedor.resx">
+      <DependentUpon>TelaManterFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telaManterFuncionario.resx">
+      <DependentUpon>telaManterFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telaRelatorioFuncionario.resx">
+      <DependentUpon>telaRelatorioFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telaRelatorioProdutos.resx">
+      <DependentUpon>telaRelatorioProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telaRelatorioVendas.resx">
+      <DependentUpon>telaRelatorioVendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online-payment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\analysis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\analysis1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\value.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoCerto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoCerto1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lg1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo grande.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoCerto2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
